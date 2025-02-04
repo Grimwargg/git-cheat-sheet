@@ -1,0 +1,84 @@
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+
+// change current directory
+cd directoryName
+
+// init a new local repo
+git init
+
+// add on git all files with .c extension
+git add *.c
+// git add can be used also to add a new file to be traked 
+// and to stage a modified file
+// is a multipurpose command?—?you use it to begin tracking new files, to stage files,
+// and to do other things like marking merge-conflicted files as resolved.
+
+// commit 
+//-m is to set a commit message
+git commit -m 'Initial project version'
+
+// pushing on remote
+git push 
+
+// verify the status of the working tree
+git status
+
+// clone a remote repo
+// creates a directory named libgit2, initializes a .git directory inside it,
+// pulls down all the data for that repository
+// and checks out a working copy of the latest version.
+git clone https://github.com/libgit2/libgit2
+
+// clone the repository into a directory named something other than libgit2, 
+// you can specify the new directory name as an additional argument
+git clone https://github.com/libgit2/libgit2 mylibgit
+
+// to ignore file a .gitignore file should be created
+// in that file you can specify anything 
+// example below I ignore all .vs files, all file under 'x64\' directory
+// and all files under 'C++/C++ Learning/' directory
+*.vs
+x64/
+C++/C++ Learning/
+
+//RULLZ for the patterns you can put in the .gitignore file are as follows:
+//1    Blank lines or lines starting with # are ignored.
+//2    Standard glob patterns work, and will be applied recursively throughout the entire working tree.
+//3    You can start patterns with a forward slash (/) to avoid recursivity.
+//4    You can end patterns with a forward slash (/) to specify a directory.
+//5    You can negate a pattern by starting it with an exclamation point (!).
+
+//another example:
+
+# ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
+
+// more examples here--> https://github.com/github/gitignore
+
+
+// what you've changed but not yet staged? 
+git diff
+
+
+//use git config (read help, use local to define for each repo)to change the username and mail (git account) that makes changes to repo
+D:\mojo\stuff\learning\github\c-learning [main ?]> git config --local user.name "Grimwargg"
+D:\mojo\stuff\learning\github\c-learning [main ?]> git config --local user.email "modoianurazvan21@gmail.com"
