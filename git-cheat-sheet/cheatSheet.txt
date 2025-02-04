@@ -88,3 +88,6 @@ git reset
 
 //submit a commit with title and description
 git commit -m "title" -m "description"
+
+//get commit history for a file
+git log --follow -- filename
