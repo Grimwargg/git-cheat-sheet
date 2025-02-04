@@ -82,3 +82,9 @@ git diff
 //use git config (read help, use local to define for each repo)to change the username and mail (git account) that makes changes to repo
 D:\mojo\stuff\learning\github\c-learning [main ?]> git config --local user.name "Grimwargg"
 D:\mojo\stuff\learning\github\c-learning [main ?]> git config --local user.email "modoianurazvan21@gmail.com"
+
+//revert "git add ." action"
+git reset
+
+//submit a commit with title and description
+git commit -m "title" -m "description"
