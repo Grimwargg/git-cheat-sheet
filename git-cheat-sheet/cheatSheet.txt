@@ -92,3 +92,5 @@ git commit -m "title" -m "description"
 //get commit history for a file
 git log --follow .\git-cheat-sheet\cheatSheet.txt
 
+//add a new line in git commit message
+git commit -m "added a better example for getting commit history of a file" -m "test commit description\n\nthis should be on a new line"
