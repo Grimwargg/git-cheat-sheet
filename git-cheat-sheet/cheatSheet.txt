@@ -14,7 +14,7 @@ git init
 git add *.c
 // git add can be used also to add a new file to be traked 
 // and to stage a modified file
-// is a multipurpose command?—?you use it to begin tracking new files, to stage files,
+// is a multipurpose command?â€”?you use it to begin tracking new files, to stage files,
 // and to do other things like marking merge-conflicted files as resolved.
 
 // commit 
@@ -93,4 +93,15 @@ git commit -m "title" -m "description"
 git log --follow .\git-cheat-sheet\cheatSheet.txt
 
 //add a new line in git commit message
+
 git commit -m "added a better example for getting commit history of a file" -m "test commit description\n\nthis should be on a new line"
+
+//site with info about how to purge git history
+https://xebia.com/blog/deleting-your-commit-history/
+
+//site with info for github LFS instructions
+https://github.blog/open-source/git/git-lfs-2-2-0-released/
+https://github.com/git-lfs/git-lfs/blob/main/docs/man/git-lfs-migrate.adoc?utm_source=gitlfs_site&utm_medium=doc_man_migrate_link&utm_campaign=gitlfs
+
+//site with info about how to remove hanging references
+https://git-scm.com/docs/git-prune
